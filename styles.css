@@ -9,7 +9,11 @@
 }
 
 .logo {
-    max-width: 350px;
+    max-width: 600px;
+}
+
+.logo-dark {
+    display: none;
 }
 
 .email-link {
@@ -21,4 +25,21 @@
 
 .email-link:hover {
     color: #999;
+}
+
+.dark-background {
+    background-color: black;
+}
+
+.dark-background .email-link {
+    color: white;
+}
+
+.dark-background .logo-dark {
+    display: block;
+}
+
+
+.dark-background .logo-light {
+    display: none;
 }
