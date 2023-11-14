@@ -1,32 +1,68 @@
-.pagewrapper {
+.flex {
   display: flex;
-  flex-direction: column;
+  height: 70vh;
+}
+
+.jusitify-center {
+  jusitify-content: center;
+}
+
+.align-center {
   align-items: center;
-  justify-content: center;
+}
+
+body {
   padding: 40px;
   height: 75vh;
   font-family: "Montserrat", sans-serif;
 }
 
-.logo {
-  max-width: 600px;
+.pagewrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  padding-top: 0px;
 }
 
-@media screen and (max-width: 768px) {
-  .logo {
-    max-width: 350px;
-  }
+.logo {
+  max-width: 250px;
 }
 
 .logo-dark {
   display: none;
 }
 
+.header-navigation {
+  margin-top: 5px;
+  line-height: 1.7;
+}
+
+.header-navigation-link {
+  color: white;
+  text-decoration: none;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.header-navigation-link:hover {
+  color: #999;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
 .email-link {
-  position: absolute;
-  bottom: 20px;
   color: black;
   font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 980px) {
 }
 
 .email-link:hover {
@@ -37,7 +73,12 @@
   background-color: black;
 }
 
-.dark-background .email-link {
+.dark-background .email-link,
+.dark-background h1,
+.dark-background h2,
+.dark-background h3,
+.dark-background p,
+.dark-background span {
   color: white;
 }
 

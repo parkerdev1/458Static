@@ -1,0 +1,45 @@
+.investments-gird {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.investments-gird-row-1,
+.investments-gird-row-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.investments-gird-row-1 .investment-link {
+  width: 33%;
+}
+
+.investments-gird-row-2 .investment-link {
+  width: 50%;
+}
+
+@media screen and (max-width: 980px) {
+  .investments-gird-row-1 .investment-link,
+  .investments-gird-row-2 .investment-link {
+    width: 100%;
+  }
+}
+.investment-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.investment-logo {
+  max-width: 250px;
+  height: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .email-link {
+    position: relative;
+  }
+}
