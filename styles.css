@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .logo-dark {
@@ -35,6 +35,12 @@ body {
 .header-navigation {
   margin-top: 5px;
   line-height: 1.7;
+  height: 40px;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
 }
 
 .header-navigation-link {
@@ -42,10 +48,12 @@ body {
   text-decoration: none;
   padding-right: 10px;
   white-space: nowrap;
+  transition: all 0.4s;
 }
 
 .header-navigation-link:hover {
   color: #999;
+  font-size: 18px;
 }
 
 .footer {
@@ -60,9 +68,6 @@ body {
   font-size: 16px;
   position: absolute;
   bottom: 20px;
-}
-
-@media screen and (max-width: 980px) {
 }
 
 .email-link:hover {
@@ -88,4 +93,11 @@ body {
 
 .dark-background .logo-light {
   display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .header-navigation {
+    height: auto;
+    padding: 5px 0px;
+  }
 }
