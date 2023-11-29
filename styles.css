@@ -40,7 +40,7 @@ body {
   border-bottom: solid 2px white;
   display: flex;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .header-navigation-link {
@@ -95,9 +95,19 @@ body {
   display: none;
 }
 
+.homepage-quote {
+  font-size: 24px;
+  max-width: 1100px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
 @media screen and (max-width: 980px) {
   .header-navigation {
     height: auto;
     padding: 5px 0px;
+  }
+  .pagewrapper {
+    padding: 0px
   }
 }
