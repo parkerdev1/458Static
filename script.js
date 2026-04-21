@@ -1,6 +1,5 @@
 const body = document.querySelector("body");
 
-console.log("loaded", body);
 window.setInterval(() => {
   if (body.classList.contains('dark-background')) {
     body.classList.remove('dark-background');
