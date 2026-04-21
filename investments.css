@@ -11,13 +11,14 @@
   flex-wrap: wrap;
 }
 
-.investments-gird-row .investment-link {
+.investments-gird-row li {
   width: 33%;
+  list-style: none;
 }
 
 
 @media screen and (max-width: 980px) {
-  .investments-gird-row .investment-link {
+  .investments-gird-row li {
     width: 100%;
   }
 }
